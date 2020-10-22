@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+
+    <main>
+      <div class="container">
+        <section id="selezione">
+          <div class="jumbotron custom-jumbotron">
+            <h1 class="display-4 text-center">Seleziona website</h1>
+            <hr class="my-4">
+            <div class="row">
+              <div class="col sel-button">
+                <button id="mail-btn" class="btn btn-success btn-lg">Mail</a>
+                <button id="dadi-btn" class="btn btn-info btn-lg">Dadi</a>
+              </div>
+          </div>
+        </div>
+        </section>
+        <section id="dadisec" style="display:;">
+          <div class="jumbotron">
+            <h1 class="display-4 text-center">Dadi</h1>
+            <hr class="my-4">
+            <h3 class="text-center text-uppercase">Premi Roll per vedere chi vince</h3>
+            <div class="row justify-content-center">
+              <div class="col text-center">
+                <button class="btn btn-success btn-lg" id="btn-roll">Roll</button>
+              </div>
+            </div>
+              <div  id="dado-alert" style="display:none;">
+                <div class="row justify-content-center">
+                  <div class="col-4 text-center ">
+                    <div class="alert" role="alert" id="dado-alert-class">
+                      <span id="dado-alert-mess"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div id="dadiout" style="display:none;">
+              <div class="row justify-content-center">
+                <div class="col-2 text-center">
+                  <h5>IO</h5>
+                    <img src="" alt="" id="imgdadoio">
+                </div>
+                <div class="col-2 text-center">
+                  <h5>IA</h5>
+                  <img src="" alt="" id="imgdadoia">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="mailsec" style="display:none;">
+          <div class="jumbotron">
+            <h1 class="display-4 text-center">Mail</h1>
+            <hr class="my-4">
+            <h4 class="text-center">Controlla se la tua email è autorizzata</h4>
+              <div  id="alert-succ" style="display:none;">
+                <div class="row justify-content-center">
+                  <div class="col-4 text-center ">
+                    <div class="alert alert-success" role="alert" >
+                      Email Autorizzata - puoi proseguire
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="emailinput">
+                <div class="row justify-content-center">
+                <div class="col-4 text-center ">
+                    <div class="alert alert-danger" role="alert" id="alert-err" style="display:none;" >
+                      Email non autorizzata, riprovare!
+                    </div>
+                  <label for="nkm">Inserisci email da verificare</label>
+                  <input type="email" class="form-control" id="email" placeholder="Inserisci email">
+                </div>
+              </div>
+                  <div class="row justify-content-center">
+                    <div class="col-2 text-center">
+                      <button class="btn btn-danger" id="calcolaemail" type="button">Verifica</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+      </div>
+    </main>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
